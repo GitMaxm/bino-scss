@@ -1,0 +1,25 @@
+:root {
+	--container-width: 1200px;
+	--container-padding: 15px;
+
+	--font-main: "Syne", sans-serif;
+	--font-accent: "Plus Jakarta Sans", sans-serif;
+
+	--color-black: #000;
+	--color-white: #fff;
+
+	--page-bg: #fdfbf5;
+	--text-color: #000;
+	--text-color-nav: #444;
+
+	--accent: #ac182c;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

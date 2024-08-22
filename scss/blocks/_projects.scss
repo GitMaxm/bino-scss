@@ -1,0 +1,91 @@
+.projects {
+    padding: 35px 0;
+}
+
+.projects-wrapper {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 70px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__line {
+        width: 1px;
+        background: var(--color-black);
+    }
+}
+
+.projects-content {
+    max-width: 370px;
+
+    &__description {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h2 {
+        margin-top: 8px;
+        margin-bottom: 23px;
+    }
+
+    button {
+        margin-top: 39px;
+    }
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+    width: 100%;
+
+    &__block {
+        background-color: var(--color-black);
+        border-radius: 15px;
+
+        h4 {
+            color: var(--color-white);
+            font-size: 24px;
+            line-height: 1.4;
+        }
+    }
+
+    &__img {
+        border-radius: 15px;
+        height: 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        transition:
+            height 0.3s ease,
+            opacity 0.3s ease;
+        opacity: 0.5; /* Полупрозрачный по умолчанию */
+
+        &--active {
+            height: 300px;
+
+            opacity: 1; /* Полная непрозрачность для активного элемента */
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        padding: 30px 20px;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        background-color: var(--color-white);
+        border-radius: 3px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        padding: 7px 15px;
+    }
+}
+
+// Анимация
