@@ -1,0 +1,50 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+
+	font-size: clamp(0.813rem, 0.744rem + 0.34vw, 1rem); // 16 - 13
+	font-weight: 400;
+
+	margin: 30px 65px;
+	border: 1px solid #000;
+
+	@media (max-width: 750px) {
+		margin: 20px 50px;
+	}
+
+	@media (max-width: 750px) {
+		margin: 20px 50px;
+	}
+
+	@media (max-width: 600px) {
+		margin: 10px 30px;
+	}
+
+	@media (max-width: 480px) {
+		margin: 10px 15px;
+	}
+}
+
+h1 {
+	font-weight: 600;
+	font-size: clamp(2.5rem, 1.591rem + 4.55vw, 5rem); //80-40
+}
+
+h2 {
+	font-weight: 600;
+	font-size: clamp(1.563rem, 1.222rem + 1.7vw, 2.5rem); //40-25
+}
+
+h3 {
+	font-weight: 500;
+	font-size: clamp(1.5rem, 1.364rem + 0.68vw, 1.875rem); //30 - 24
+}
+
+h4 {
+	font-weight: 600;
+}

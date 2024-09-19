@@ -1,0 +1,140 @@
+.news {
+    padding: 35px 0;
+}
+
+.news-wrapper {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    gap: 30px;
+
+    @media (max-width: 1175px) {
+        gap: 50px;
+    }
+}
+
+.news-content {
+    // max-width: 370px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 1050px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h2 {
+        margin-top: 8px;
+        margin-bottom: 23px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    div {
+        max-width: 450px;
+    }
+}
+
+.news-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 470px;
+        width: 100%;
+
+        &-line {
+            height: 1px;
+            background: var(--color-black);
+
+            @media (max-width: 900px) {
+                display: none;
+            }
+        }
+    }
+
+    &__line {
+        width: 1px;
+        background: var(--color-black);
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    &__block {
+        h4 {
+            font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem); // 24-16
+            line-height: 1.4;
+        }
+    }
+
+    &__img {
+        border-radius: 15px;
+        height: 220px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width: 490px) {
+            // height: 200px;
+        }
+    }
+    &__img-big {
+        border-radius: 15px;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width: 490px) {
+            // height: 200px;
+        }
+    }
+
+    &__title {
+        padding: 10px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__btn {
+        background-color: var(--color-white);
+        border-radius: 3px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        padding: 7px 15px;
+
+        @media (max-width: 490px) {
+            padding: 5px 13px;
+        }
+    }
+}

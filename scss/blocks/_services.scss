@@ -1,0 +1,128 @@
+.services {
+    padding: 35px 0;
+}
+
+.services-wrapper {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width: 1175px) {
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.services-content {
+    max-width: 370px;
+
+    &__description {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h2 {
+        margin-top: 8px;
+        margin-bottom: 23px;
+    }
+
+    button {
+        margin-top: 39px;
+    }
+}
+
+.services-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: flex-end;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 85px;
+    column-gap: 120px;
+
+    @media (max-width: 880px) {
+        row-gap: 65px;
+        column-gap: 80px;
+    }
+
+    @media (max-width: 800px) {
+        gap: 50px;
+    }
+    @media (max-width: 705px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        max-width: 670px;
+        width: 100%;
+        background-image: url("./../img/services/decor/line-horizon.png");
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 880px) {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 403px;
+        width: 1px;
+        background-image: url("./../img/services/decor/line-vertical.png");
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 880px) {
+            display: none;
+        }
+    }
+
+    &__block {
+        max-width: 270px;
+        display: flex;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    &__img {
+        margin-top: 12px;
+        img {
+            max-width: 70px;
+        }
+    }
+
+    &__content {
+        p {
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 13px;
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            color: var(--text-color);
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

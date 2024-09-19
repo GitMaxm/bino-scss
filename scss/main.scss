@@ -1,0 +1,20 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/btn";
+@import "./base/anim";
+
+/* Blocks */
+@import "./blocks/clients.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/mobile-nav.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/nav-icon.scss";
+@import "./blocks/services.scss";
+@import "./blocks/projects.scss";
+@import "./blocks/news.scss";
